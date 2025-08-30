@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Basketball Scoreboard | Scrimba</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <h1 id="app-title">Scoreboard</h1>
+      </div>
+      <div class="score-container">
+        <div class="scorebox">
+          <h3 class="title">HOME</h3>
+          <h3 class="score" id="home-score"></h3>
+        </div>
+        <div class="scorebox">
+          <h3 class="title">GUEST</h3>
+          <h3 class="score" id="guest-score"></h3>
+        </div>
+      </div>
+
+      <div class="score-increment">
+        <div class="increment">
+          <div class="home-increment">
+            <button class="btn1 score-button" onclick="addOneHome()">+1</button>
+            <button class="btn2 score-button" onclick="addTwoHome()">+2</button>
+            <button class="btn3 score-button" onclick="addThreeHome()">
+              +3
+            </button>
+          </div>
+          <div class="guest-increment">
+            <button class="btn1 score-button" onclick="addOneGuest()">
+              +1
+            </button>
+            <button class="btn2 score-button" onclick="addTwoGuest()">
+              +2
+            </button>
+            <button class="btn3 score-button" onclick="addThreeGuest()">
+              +3
+            </button>
+          </div>
+        </div>
+
+        <div class="new-game">
+          <button id="newGame-btn" onclick="newGame()">New Game</button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
